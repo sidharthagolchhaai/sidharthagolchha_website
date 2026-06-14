@@ -111,7 +111,7 @@ const jobs: Job[] = [
   },
 ];
 
-function JobCard({ job, index }: { job: Job; index: number }) {
+function JobCard({ job }: { job: Job }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -210,8 +210,8 @@ export default function Experience() {
       <div className="max-w-6xl mx-auto">
         <SectionHeading />
         <div className="flex flex-col gap-6 md:gap-8 mt-12">
-          {jobs.map((job, i) => (
-            <JobCard key={job.company} job={job} index={i} />
+          {jobs.map((job) => (
+            <JobCard key={job.company} job={job} />
           ))}
         </div>
       </div>

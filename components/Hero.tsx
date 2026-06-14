@@ -181,13 +181,6 @@ export default function Hero() {
             >
               View My Work
             </MagneticButton>
-            <MagneticButton
-              href="/resume/Sidhartha_Golchha_Resume.pdf"
-              download
-              className="px-8 py-4 rounded-full border border-offwhite/30 text-offwhite font-semibold text-sm tracking-wide hover:border-warm-brown hover:text-warm-brown transition-colors inline-block"
-            >
-              Download Resume
-            </MagneticButton>
           </motion.div>
         </div>
 
